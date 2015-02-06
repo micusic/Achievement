@@ -72,7 +72,7 @@ Template.appBody.helpers({
     return Session.get(USER_MENU_KEY);
   },
   lists: function() {
-    return Lists.find();
+    return Lists.find({}, {sort: {name: 1}});
   },
   activeListClass: function() {
     var current = Router.current();

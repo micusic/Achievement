@@ -45,7 +45,7 @@
       {{/if}}
 
       <form class="js-todo-new todo-new input-symbol">
-        <input type="text" placeholder="Type to add new tasks">
+        <input type="text" placeholder="Type to add new achievement.">
         <span class="icon-add js-todo-add"></span>
       </form>
     </nav>
@@ -60,14 +60,14 @@
             {{> todosItem}}
           {{else}}
             <div class="wrapper-message">
-              <div class="title-message">No tasks here</div>
-              <div class="subtitle-message">Add new tasks using the field above</div>
+              <div class="title-message">No achievements here</div>
+              <div class="subtitle-message">Add new achievements using the field above</div>
             </div>
           {{/each}}
         {{/with}}
       {{else}}
           <div class="wrapper-message">
-            <div class="title-message">Loading tasks...</div>
+            <div class="title-message">Loading achievements...</div>
           </div>
       {{/if}}
     </div>
